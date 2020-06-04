@@ -2,13 +2,13 @@ package com.example.moduletestapp
 
 import android.os.Bundle
 import android.util.Log
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
-import com.example.moduletestapp.models.Model1
+import com.example.models.Model2
 
 /**
  * A simple [Fragment] subclass as the second destination in the navigation.
@@ -34,8 +34,8 @@ class SecondFragment : Fragment() {
         method2()
     }
 
-    fun method2(){
-        val model1 = Model1("test1")
+    fun method2() {
+        val model1 = Model2("test1")
 
         Log.d(TAG, "method1: $model1")
     }
